@@ -1,0 +1,15 @@
+<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let public of public">
+    <div class="card text-center">
+      <div class="card-body">
+        <img src='../../assets/rimg.jpg' width="300" height="300">
+        <br>
+        <p class="card-text">{{public.description}}</p>
+        <a href="#" class="btn btn-primary">Rohit Sharma</a>
+      </div>
+      <div class="card-footer text-muted">
+        {{public.date | date:'shortDate'}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<!-- <div class="py-5">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <span class="anchor" id="formLogin"></span>
+
+
+      <div class="card rounded-0">
+        <div class="card-header">
+          <h3 class="mb-0">Login</h3>
+        </div>
+        <div class="card-body">
+          <form class="form">
+            <div class="form-group">
+              <label for="uname1">Username</label>
+              <input type="text" class="form-control rounded-0" [(ngModel)]="loginUserData.email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control rounded-0" [(ngModel)]="loginUserData.password" name="password" required>
+            </div>
+            <button type="button" (click)="loginUser()" class="btn btn-success float-right">Login</button>
+          </form>
+        </div>
+      
+      </div>
+    
+
+    </div>
+
+
+  </div>
+</div> -->
+
+
+  
+
+    <div class="login-box"  >
+      <h1>Login</h1>
+      <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input type="text" [(ngModel)]="loginUserData.email" name="email" placeholder="Username">
+      </div>
+    
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input type="password" [(ngModel)]="loginUserData.password" name="password" placeholder="Password">
+      </div>
+      <label class="checkbox">
+        <input type="checkbox" name="checked"> <a href="#">Remember me</a>  &nbsp; &nbsp; <a href="#">Forgot Password?</a>
+      </label>
+    
+      <input type="button" (click)="loginUser()" class="btn" value="login ">
+
+      <div class="sign-up"> <h2>or</h2> </div>
+      
+      <a href="#" class="fa fa-facebook">  facebook</a> &nbsp; &nbsp; <a href="#" class="fa fa-twitter">  twitter</a>
+        <p>© 2019 Vipul Login Form</p>
+
+    </div>
+  
+
